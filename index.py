@@ -15,7 +15,7 @@ class SistemaControlStock(tk.Tk):
             "Tuerca M6",
             "Placa Base A1",
             "Soporte Motor",
-            ""
+            "Espina M8"
         ]
 
         self.pantalla_login()

@@ -19,6 +19,7 @@ class SistemaControlStock(tk.Tk):
             "Resorte",
             "orrin",
             "cables 1,5",
+            "Calbe 3mm"
         ]
 
         self.pantalla_login()

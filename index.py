@@ -17,6 +17,8 @@ class SistemaControlStock(tk.Tk):
             "Soporte Motor",
             "Espina M8",
             "Resorte",
+            "orrin",
+            "cables 1,5",
         ]
 
         self.pantalla_login()

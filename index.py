@@ -19,7 +19,9 @@ class SistemaControlStock(tk.Tk):
             "Resorte",
             "orrin",
             "cables 1,5",
-            "Calbe 3mm"
+            "Calbe 3mm",
+            "Reguladores de caudal"
+
         ]
 
         self.pantalla_login()

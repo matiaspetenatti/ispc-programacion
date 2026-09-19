@@ -14,6 +14,8 @@ Consultas y Reportes: Visualización rápida del estado actual del almacén y el
 
 ## Tecnologías Utilizadas
 Lenguaje: Python 
+
 Base de Datos: SQL (SQLite) 
+
 Control de Versiones: Git y GitHub
 

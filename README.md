@@ -6,4 +6,4 @@
 
 ## Caracterosticas principales
 
-## Tecnologias utilizadas 
+## Uso

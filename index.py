@@ -18,7 +18,7 @@ class SistemaControlStock(tk.Tk):
             "Espina M8",
             "Resorte",
             "Oring",
-            "Cables 1,5",
+            "Cables 1,5mm",
             "Cable 3mm",
             "Reguladores de caudal"
 

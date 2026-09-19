@@ -1,11 +1,11 @@
-# Titulo
+# Título
 
 
 ## Instalación
 
 
 
-#### Tecnologías Utilizadas
+## Tecnologías Utilizadas
 Lenguaje: Python 
 
 Base de Datos: SQL (SQLite) 

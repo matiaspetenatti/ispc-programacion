@@ -17,9 +17,9 @@ class SistemaControlStock(tk.Tk):
             "Soporte Motor",
             "Espina M8",
             "Resorte",
-            "orrin",
-            "cables 1,5",
-            "Calbe 3mm",
+            "Oring",
+            "Cables 1,5",
+            "Cable 3mm",
             "Reguladores de caudal"
 
         ]

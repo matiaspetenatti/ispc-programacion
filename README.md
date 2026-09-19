@@ -3,5 +3,3 @@
 
 ## Instalación
 
-
-## Uso

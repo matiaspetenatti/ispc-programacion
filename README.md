@@ -6,7 +6,11 @@
 
 
 ## Características principales
-
+Características Principales  
+Control de Inventario de Componentes: Registro detallado de entradas, salidas y stock actual de piezas mecánicas, electrónicas y tornillería. 
+Alertas de Stock Crítico: Avisos automáticos cuando los componentes esenciales se encuentran por debajo del nivel mínimo de seguridad. 
+Gestión de Proveedores: Registro de la procedencia de los insumos para facilitar el control de calidad y reposición. 
+Consultas y Reportes: Visualización rápida del estado actual del almacén y el historial de movimientos.
 
 
 ## Tecnologías Utilizadas

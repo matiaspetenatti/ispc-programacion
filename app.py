@@ -14,11 +14,13 @@ class SistemaControlStock(ctk.CTk):
         self.title(config.TITULO_APP)
         self.geometry(config.TAMANO_VENTANA)
         self.configure(fg_color=config.COLOR_FONDO)
+        self.empleado_actual = None
 
         self.pantalla_login()
 
     # PANTALLA 1: LOGIN
     def pantalla_login(self):
+        self.empleado_actual = None
         self.limpiar_pantalla()
         PantallaLogin(self, self).pack(fill="both", expand=True)
 

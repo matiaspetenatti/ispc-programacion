@@ -36,6 +36,14 @@ class PantallaPrincipal(ctk.CTkFrame):
         )
         btn_salir.pack(side="right", padx=15, pady=10)
 
+        nombre_empleado = self.app.empleado_actual[1]
+        ctk.CTkLabel(
+            header,
+            text=f"Usuario: {nombre_empleado}",
+            font=config.FUENTE_NORMAL,
+            text_color="white"
+        ).pack(side="right", padx=10)
+
         # Contenedor de Pestañas
         tabview = ctk.CTkTabview(
             self,

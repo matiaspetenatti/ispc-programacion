@@ -1,0 +1,26 @@
+
+# Constantes de estilo
+
+TITULO_APP = "Sistema de Control de Stock - ISPC"
+TAMANO_VENTANA = "720x520"
+
+#  Colores
+COLOR_FONDO = "#A2D9CE"
+COLOR_FONDO_TAB = "#E8F8F5"
+COLOR_HEADER = "#1B4F72"
+
+COLOR_VERDE = "#27AE60"
+COLOR_VERDE_HOVER = "#1E8449"
+COLOR_AZUL = "#2980B9"
+COLOR_AZUL_HOVER = "#1F618D"
+COLOR_ROJO = "#C0392B"
+COLOR_ROJO_HOVER = "#922B21"
+COLOR_VIOLETA = "#8E44AD"
+COLOR_VIOLETA_HOVER = "#6C3483"
+
+# Fuentes
+FUENTE_TITULO = ("Arial", 24, "bold")
+FUENTE_SUBTITULO = ("Arial", 18, "bold")
+FUENTE_HEADER = ("Arial", 14, "bold")
+FUENTE_NORMAL = ("Arial", 13)
+FUENTE_BOTON = ("Arial", 13, "bold")

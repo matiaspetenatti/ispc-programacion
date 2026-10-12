@@ -57,5 +57,18 @@ def validar_login(legajo, clave):
     return None                                  # clave incorrecta
 
 
+def existe_legajo(legajo):
+    conexion = base_datos.conectar()
+    try:
+        cursor = conexion.cursor()
+        cursor.execute(
+            "SELECT 1 FROM EMPLEADO_DEPOSITO WHERE legajo = ?", (legajo,)
+        )
+        return cursor.fetchone() is not None
+    finally:
+        conexion.close()
+
+
 def crear_usuario_demo():
-    crear_empleado("Administrador", "admin", "admin123")
+    if not existe_legajo("admin"):
+        crear_empleado("administrador", "admin", "321")

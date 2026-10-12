@@ -2,7 +2,7 @@
 # Constantes de estilo
 
 TITULO_APP = "Sistema de Control de Stock - ISPC"
-TAMANO_VENTANA = "720x520"
+TAMANO_VENTANA = "800x600"
 
 #  Colores
 COLOR_FONDO = "#A2D9CE"

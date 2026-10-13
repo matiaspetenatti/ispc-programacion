@@ -2,13 +2,21 @@
 # Acá está todo lo que tiene que ver con abrir la base y crear las tablas.
 # El resto de los archivos solo piden la conexión con conectar().
 import os
+import sys
 import sqlite3
 
-# La base y el script.sql se buscan en la misma carpeta que este archivo,
-# así funciona sin importar desde dónde se ejecute la app.
-CARPETA = os.path.dirname(os.path.abspath(__file__))
-RUTA_DB = os.path.join(CARPETA, "stock.db")
-RUTA_SCRIPT = os.path.join(CARPETA, "script.sql")
+if getattr(sys, "frozen", False):
+    # Corriendo como .exe: la base queda al lado del .exe
+    # y script.sql viene guardado adentro del .exe
+    CARPETA_DB = os.path.dirname(sys.executable)
+    CARPETA_SCRIPT = sys._MEIPASS
+else:
+    # Corriendo normal con python index.py: todo como antes
+    CARPETA_DB = os.path.dirname(os.path.abspath(__file__))
+    CARPETA_SCRIPT = CARPETA_DB
+
+RUTA_DB = os.path.join(CARPETA_DB, "stock.db")
+RUTA_SCRIPT = os.path.join(CARPETA_SCRIPT, "script.sql")
 
 
 def conectar():

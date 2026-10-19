@@ -5,7 +5,7 @@ CREATE TABLE MARCA (
 
 CREATE TABLE PRODUCTO (
     id_producto INTEGER PRIMARY KEY AUTOINCREMENT,
-    nombre TEXT NOT NULL,
+    nombre TEXT NOT NULL COLLATE NOCASE UNIQUE,
     descripcion TEXT,
     id_marca INTEGER NOT NULL,
     ubicacion TEXT,
@@ -67,7 +67,7 @@ CREATE TABLE DETALLE_COMPRA (
 CREATE TABLE PEDIDO (
     id_pedido INTEGER PRIMARY KEY AUTOINCREMENT,
     fecha_pedido TEXT NOT NULL DEFAULT (datetime('now', 'localtime')),
-    estado TEXT NOT NULL,
+    estado TEXT NOT NULL CHECK (estado IN ('Ejecutado')),
     id_area INTEGER NOT NULL,
     id_empleado INTEGER NOT NULL,
 
@@ -95,8 +95,8 @@ CREATE TABLE DETALLE_PEDIDO (
 CREATE TABLE STOCK_MOVIMIENTO (
     id_movimiento INTEGER PRIMARY KEY AUTOINCREMENT,
     fecha TEXT NOT NULL DEFAULT (datetime('now', 'localtime')),
-    tipo_movimiento TEXT NOT NULL,
-    cantidad INTEGER NOT NULL,
+    tipo_movimiento TEXT NOT NULL CHECK (tipo_movimiento IN ('INGRESO', 'EGRESO', 'STOCK_INICIAL')),
+    cantidad INTEGER NOT NULL CHECK (cantidad > 0),
     id_producto INTEGER NOT NULL,
     id_pedido INTEGER NULL,
 

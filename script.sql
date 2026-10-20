@@ -106,3 +106,12 @@ CREATE TABLE STOCK_MOVIMIENTO (
     FOREIGN KEY (id_pedido) 
         REFERENCES PEDIDO(id_pedido)
 );
+
+-- DATOS DE PRUEBA
+
+INSERT INTO AREA (nombre, legajo, contacto) VALUES ('Ensamble', 'A01', 'ensamble@empresa.com');
+INSERT INTO AREA (nombre, legajo, contacto) VALUES ('Mantenimiento', 'A02', 'mantenimiento@empresa.com');
+INSERT INTO AREA (nombre, legajo, contacto) VALUES ('Electrónica', 'A03', 'electronica@empresa.com');
+INSERT INTO AREA (nombre, legajo, contacto) VALUES ('Calidad', 'A04', 'calidad@empresa.com');
+
+
